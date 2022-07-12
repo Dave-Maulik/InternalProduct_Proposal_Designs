@@ -1,0 +1,40 @@
+.header-subtext span {
+    font-size: 12px;
+}
+
+
+#first-div{
+    height: 8rem;
+    background-color: orange
+}
+
+#grid-div{
+    height: 4rem;
+    background-color: palegreen;
+}
+
+
+.top-header{
+    position: fixed;
+}
+
+.global-navbar{
+    position: relative;
+    margin-top: 50px;
+}
+
+.path-header{
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.center-page-content{
+    margin-top: 20px;
+}
+
+.opp-btn-group{
+    text-align: right;
+}
