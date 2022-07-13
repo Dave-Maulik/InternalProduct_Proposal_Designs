@@ -98,3 +98,7 @@
     text-align: left;
     width: 70px;
 }
+input.slds-input1{
+    width: 15px;
+    height: 15px;
+}
