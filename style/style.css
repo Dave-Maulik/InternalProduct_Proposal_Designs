@@ -32,7 +32,7 @@
 }
 
 .center-page-content{
-    margin-top: 20px;
+    margin-top: 6px;
 }
 
 .opp-btn-group{
@@ -102,3 +102,29 @@ input.slds-input1{
     width: 15px;
     height: 15px;
 }
+
+.info-section{
+    padding: 15px;
+}
+
+.info-section h4{
+    font-weight: 800;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  #generateBtn{
+    justify-content: right;
+    padding: 10px;
+  }
+
+  
