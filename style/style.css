@@ -102,29 +102,70 @@ input.slds-input1{
     width: 15px;
     height: 15px;
 }
-
-.info-section{
+.info-section {
     padding: 15px;
 }
 
-.info-section h4{
+.info-section h4 {
     font-weight: 800;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+}
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  #generateBtn{
+}
+
+#generateBtn {
     justify-content: right;
     padding: 10px;
-  }
+}
 
+.additional-doc-section .slds-col:first-child {
+    margin-right: 10px;
+}
+
+.doc-add-btn {
+    margin-top: 50px;
+}
+
+.doc-view-header {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 18px;
+
+}
+
+#showDocument {
+    height: 300px;
+}
+
+#emailbody {
+    margin-top: 10px;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+input.qtyplus {
+    width: 25px;
+    height: 25px;
+}
+
+input.qtyminus {
+    width: 25px;
+    height: 25px;
+}
+
+
+  
   
