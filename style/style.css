@@ -3,27 +3,27 @@
 }
 
 
-#first-div{
+#first-div {
     height: 8rem;
     background-color: orange
 }
 
-#grid-div{
+#grid-div {
     height: 4rem;
     background-color: palegreen;
 }
 
 
-.top-header{
+.top-header {
     position: fixed;
 }
 
-.global-navbar{
+.global-navbar {
     position: relative;
     margin-top: 50px;
 }
 
-.path-header{
+.path-header {
     background-color: aliceblue;
     padding: 10px;
     font-size: 15px;
@@ -31,26 +31,26 @@
     text-align: center;
 }
 
-.center-page-content{
+.center-page-content {
     margin-top: 6px;
 }
 
-.opp-btn-group{
+.opp-btn-group {
     text-align: right;
 }
 
-.path-sub-header{
+.path-sub-header {
     margin-bottom: 5px;
 }
 
 .path-sub-header .slds-col {
     text-align: center;
     background-color: lightgoldenrodyellow;
-    padding:5px;
+    padding: 5px;
 }
 
 
-.partition{
+.partition {
     margin: 10px 0px 10px 0px;
 }
 
@@ -62,91 +62,110 @@
     margin-top: 20px;
 }
 
-.product-list-item{
+.product-list-item {
     padding: 25px;
     border-top: 1px solid silver;
     border-left: 1px solid silver;
     border-right: 1px solid silver;
 }
 
-.product-list-item:last-child{
+.product-list-item:last-child {
     border-bottom: 1px solid silver;
 }
 
-.product-details{
-    float:left; display:inline; width: 20%;
+.product-details {
+    float: left;
+    display: inline;
+    width: 20%;
     text-align: left;
 }
 
-.product-list-item-group{
+.product-list-item-group {
     margin-bottom: 19px
 }
 
-.product-list-item-group{
+.product-list-item-group {
     margin-bottom: 19px
 }
 
-.product-list-item-group:last-child{
+.product-list-item-group:last-child {
     text-align: center;
 }
 
-.product-actions{
+.product-actions {
     text-align: right;
 }
 
-.product-select{
+.product-select {
     text-align: left;
     width: 70px;
 }
-input.slds-input1{
+
+input.slds-input1 {
     width: 15px;
     height: 15px;
 }
 
-.info-section{
+.info-section {
     padding: 15px;
 }
 
-.info-section h4{
+.info-section h4 {
     font-weight: 800;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+}
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  #generateBtn{
+}
+
+#generateBtn {
     justify-content: right;
     padding: 10px;
-  }
+}
 
-  .additional-doc-section .slds-col:first-child{ 
+.additional-doc-section .slds-col:first-child {
     margin-right: 10px;
-  }
+}
 
-  .doc-add-btn{
+.doc-add-btn {
     margin-top: 50px;
-  }
+}
 
-  .doc-view-header{
+.doc-view-header {
     background-color: aliceblue;
     text-align: center;
     padding: 18px;
-    
-  }
 
-  #showDocument{
+}
+
+#showDocument {
     height: 300px;
-  }
+}
 
-  #emailbody{
+#emailbody {
     margin-top: 10px;
-  }
-  
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+input.qtyplus {
+    width: 25px;
+    height: 25px;
+}
+
+input.qtyminus {
+    width: 25px;
+    height: 25px;
+}
