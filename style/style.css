@@ -127,4 +127,26 @@ table {
     padding: 10px;
   }
 
+  .additional-doc-section .slds-col:first-child{ 
+    margin-right: 10px;
+  }
+
+  .doc-add-btn{
+    margin-top: 50px;
+  }
+
+  .doc-view-header{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 18px;
+    
+  }
+
+  #showDocument{
+    height: 300px;
+  }
+
+  #emailbody{
+    margin-top: 10px;
+  }
   

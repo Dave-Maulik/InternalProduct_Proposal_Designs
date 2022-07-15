@@ -610,7 +610,7 @@
             </div>
 
             <div class="slds-grid slds-p-around_xxsmall">
-                <div class="slds-col slds-large-size_4-of-12 slds-p-around_xxsmall generate-section"
+                <div class="slds-col slds-large-size_6-of-12 slds-p-around_xxsmall generate-section"
                     style="border: 1px solid black;">
                     <div class="slds-card">
                         <div class="slds-col info-section">
@@ -662,7 +662,56 @@
                         </div>
                     </div>
                 </div>
-                <div class="slds-col slds-large-size_8-of-12 slds-p-around_xxsmall email-section"
+                <div class="slds-col slds-large-size_6-of-12 slds-p-around_xxsmall additional-doc-section"
+                    style="border: 1px solid black;">
+                    <div class="slds-card">
+                        <div class="slds-col info-section">
+                            <h4 style="margin-bottom: 10px;">Additional Documents</h4>
+                            <div class="slds-grid slds-p-around_xxsmall">
+                                <div class="slds-col slds-large-size_6-of-12">
+                                    <div>
+                                        <button class="slds-button slds-button_neutral">
+                                            <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                                                <use
+                                                    xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#new">
+                                                </use>
+                                            </svg>
+                                            Add From Quote
+                                        </button>
+                                    </div>
+
+                                    <div class="doc-add-btn">
+                                        <button class="slds-button slds-button_neutral">
+                                            <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                                                <use
+                                                    xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#new">
+                                                </use>
+                                            </svg>
+                                            Add from URL
+                                        </button>
+                                    </div>
+
+
+                                    <div class="doc-add-btn">
+                                        <a>
+                                            Browse from Computer
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-large-size_6-of-12" style="border:1px solid black;"
+                                    id="showDocument">
+                                    <div class="doc-view-header">
+                                        Documents to be Merged
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-p-around_xxsmall">
+                <div class="slds-col slds-large-size_12-of-12 slds-p-around_xxsmall email-section"
                     style="border: 1px solid black;">
                     <div class="slds-card">
                         <div class="slds-col info-section">
@@ -671,7 +720,8 @@
                             <div class="slds-grid">
                                 <div>
                                     <label for="text-input-id-2">To : &nbsp;</label>
-                                    <input style="width: 320px;margin-left: 118px;" type="text" id="text-input-id-2" placeholder="" required="" class="slds-input" />
+                                    <input style="width: 320px;margin-left: 118px;" type="text" id="text-input-id-2"
+                                        placeholder="" required="" class="slds-input" />
                                 </div>
                                 <div class="email-links" style="margin:12px;">
                                     <a>Cc</a>
@@ -680,19 +730,21 @@
                             </div>
 
                             <div class="slds-grid">
-                                <div >
+                                <div>
                                     <label for="text-input-id-2">Select Email Folder : &nbsp;</label>
-                                    <select style="width: 320px;margin-left: 18px;" type="" id="text-input-id-2" placeholder="" required="" class="slds-input">
+                                    <select style="width: 320px;margin-left: 18px;" type="" id="text-input-id-2"
+                                        placeholder="" required="" class="slds-input">
                                         <option>Apptus CPQ Email Templates</option>
                                     </select>
                                 </div>
-                                
+
                             </div>
 
                             <div class="slds-grid" style="margin-top:10px;">
                                 <div>
                                     <label for="text-input-id-2">Select Email Template : &nbsp;</label>
-                                    <select style="width: 320px;" type="" id="text-input-id-2" placeholder="" required="" class="slds-input">
+                                    <select style="width: 320px;" type="" id="text-input-id-2" placeholder=""
+                                        required="" class="slds-input">
                                         <option>US finalize Template</option>
                                     </select>
                                 </div>
@@ -701,13 +753,320 @@
                             <div class="slds-grid" style="margin-top:10px;">
                                 <div>
                                     <label for="text-input-id-2">Subject : &nbsp;</label>
-                                    <input style="width: 320px;margin-left: 88px;" type="text" id="text-input-id-2" placeholder="" required="" class="slds-input" />
+                                    <input style="width: 320px;margin-left: 88px;" type="text" id="text-input-id-2"
+                                        placeholder="" required="" class="slds-input" />
                                 </div>
                             </div>
 
                             <div style="margin-top: 10px;">
                                 <label for="watermark" style="margin-top:10px;">Mark as Presented</label>
                                 <input type="checkbox" id="watermark" name="watermark" value="watermark">
+                            </div>
+
+
+                            <div style="margin-top: 10px;">
+                                <label for="text-input-id-2">Body : &nbsp;</label>
+                                <div id="emailbody" style="min-height:180px">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-rich-text-editor slds-grid slds-grid_vertical slds-nowrap">
+                                                <div role="toolbar"
+                                                    class="slds-rich-text-editor__toolbar slds-shrink-none">
+                                                    <ul aria-label="Format text" class="slds-button-group-list">
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="0">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#bold">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Bold</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#italic">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Italic</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#underline">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Underline</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#strikethrough">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Strike Through</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <ul aria-label="Format body" class="slds-button-group-list">
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#richtextbulletedlist">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Bulleted List</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#richtextnumberedlist">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Numbered List</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#richtextindent">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Indent</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#richtextoutdent">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Outdent</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <ul aria-label="Remove Formatting" class="slds-button-group-list">
+                                                        <li>
+                                                            <button
+                                                                class="slds-button slds-button_icon slds-button_icon-border-filled"
+                                                                tabindex="-1">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#remove_formatting">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Remove
+                                                                    Formatting</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="slds-rich-text-editor__output slds-grid">
+                                                    <div aria-label="Compose text" contenteditable="true"
+                                                        class="slds-rich-text-area__content slds-grow">
+                                                        <div>
+                                                            <h1>Heading - h1</h1>
+                                                            <p>Lorem ipsum dolor sit amet,
+                                                                <strong>strong</strong> adipisicing elit, sed do
+                                                                <em>emphasis</em> tempor incididunt ut
+                                                                <u>underlined</u> et dolore
+                                                                <s>strikethrough</s> aliqua. Ut
+                                                                <sub>subscript</sub> ad
+                                                                <sup>superscript</sup> veniam,
+                                                                <abbr>quis</abbr> nostrud exercitation ullamco laboris
+                                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                                                dolor in
+                                                                <a href="#">link</a> in voluptate velit esse cillum
+                                                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                                cupidatat non proident, sunt in culpa qui officia
+                                                                deserunt mollit anim id est laborum.
+                                                            </p>
+                                                            <h2>Heading - h2</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod
+                                                                <a href="#">veryVeryLongWordWithHyperlinkExample</a>
+                                                                tempor incididunt ut labore et dolore magna aliqua.
+                                                            </p>
+                                                            <ul>
+                                                                <li>Unordered list item
+                                                                    <ul>
+                                                                        <li>Nested Unordered list item
+                                                                            <ol>
+                                                                                <li>Nested Ordered list item</li>
+                                                                                <li>Nested Ordered list item</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Nested Unordered list item
+                                                                            <ul>
+                                                                                <li>Nested Unordered list item</li>
+                                                                                <li>Nested Unordered list item</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>Unordered list item
+                                                                    <ol>
+                                                                        <li>Nested Ordered list item</li>
+                                                                        <li>Nested Ordered list item</li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>Unordered list item</li>
+                                                            </ul>
+                                                            <h3>Heading - h3</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua.</p>
+                                                            <ol>
+                                                                <li>Ordered list item
+                                                                    <ul>
+                                                                        <li>Nested Unordered list item
+                                                                            <ol>
+                                                                                <li>Nested Ordered list item</li>
+                                                                                <li>Nested Ordered list item</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Nested Unordered list item
+                                                                            <ul>
+                                                                                <li>Nested Unordered list item</li>
+                                                                                <li>Nested Unordered list item</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>Ordered list item
+                                                                    <ol>
+                                                                        <li>Nested Ordered list item
+                                                                            <ol>
+                                                                                <li>Nested Ordered list item
+                                                                                    <ol>
+                                                                                        <li>Nested Ordered list item
+                                                                                        </li>
+                                                                                        <li>Nested Ordered list item
+                                                                                        </li>
+                                                                                    </ol>
+                                                                                </li>
+                                                                                <li>Nested Ordered list item</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Nested Ordered list item</li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>Ordered list item</li>
+                                                            </ol>
+                                                            <ul>
+                                                                <li>
+                                                                    <div>List Item with div</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>List Item with div</div>
+                                                                </li>
+                                                            </ul>
+                                                            <ol>
+                                                                <li>
+                                                                    <div>List Item with div</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>List Item with div</div>
+                                                                </li>
+                                                            </ol>
+                                                            <h4>Heading - h4</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua.</p>
+                                                            <dl>
+                                                                <dt>Description List - Term</dt>
+                                                                <dd>Description List - Description</dd>
+                                                                <dt>Description List - Term</dt>
+                                                                <dd>Description List - Description</dd>
+                                                            </dl>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua.</p>
+                                                            <table>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Column</th>
+                                                                        <th>Column</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Row</td>
+                                                                        <td>Row</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Row</td>
+                                                                        <td>Row</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <h5>Heading - h5</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                                exercitation ullamco laboris nisi ut aliquip ex ea
+                                                                commodo consequat. Duis
+                                                                aute irure dolor in reprehenderit in voluptate velit
+                                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui
+                                                                officia deserunt mollit anim id est laborum.</p>
+                                                            <blockquote>Blockquote - incididunt ut labore et dolore
+                                                                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                                exercitation</blockquote>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                                exercitation ullamco laboris nisi ut aliquip ex ea
+                                                                commodo consequat. Duis
+                                                                aute irure dolor in reprehenderit in voluptate velit
+                                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui
+                                                                officia deserunt mollit anim id est laborum.</p>
+                                                            <h6>Heading - h6</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore
+                                                                magna aliqua. Ut enim ad minim veniam,
+                                                                <a
+                                                                    href="#">https://url.com/document/d/1dSOGKlCQtSG73NcSJB7qCJVyjE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/edE52MdTjvjGNqc3L2Rw/ed</a>
+                                                                quis nostrud
+                                                                <ins>Content to be inserted.</ins> exercitation ullamco
+                                                                <del>Content to be deleted.</del> laboris nisi ut
+                                                                aliquip ex ea commodo consequat.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="slds-grid" id="generateBtn" style="margin-top: 24px;">
