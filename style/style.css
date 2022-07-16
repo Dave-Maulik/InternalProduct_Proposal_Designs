@@ -69,6 +69,21 @@
     border-right: 1px solid silver;
 }
 
+
+/* Css for option list item start */
+.option-list-item{
+    padding: 10px;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+.option-list-item:last-child{
+    border-bottom: 1px solid silver;
+}
+/* Css for option list item end */
+
+
 .product-list-item:last-child{
     border-bottom: 1px solid silver;
 }

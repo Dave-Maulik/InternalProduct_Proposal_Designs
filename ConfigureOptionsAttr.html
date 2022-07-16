@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Product Configuration</title>
 
     <link rel="stylesheet" type="text/css"
         href="/node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css" />
@@ -503,17 +503,95 @@
 
     <div class="slds-brand-band slds-brand-band_none">
         <div class="slds-m-around_medium slds-p-around_small slds-card">
+
+            <!-- Card Header starts -->
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="account">
+                        <img class="slds-icon slds-icon_medium" aria-hidden="true" src="node_modules/@salesforce-ux/design-system/assets/icons/standard/bundle_config.svg">
+                      <span class="slds-assistive-text">Product Configuration</span>
+                    </span>
+                  </div>
+                  <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Product Configuration</span>
+                    </h2>
+                  </div>
+                </header>
+            </div>
+            <!-- Card Header ends -->
+            <hr class="partition"/>
+
+            <!-- Tabs start -->
+            <div class="slds-tabs_default">
+                <ul class="slds-tabs_default__nav" role="tablist">
+                  <li class="slds-tabs_default__item slds-is-active" title="Product Options" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">    Options</a>
+                  </li>
+                  <li class="slds-tabs_default__item" title="Product Attributes" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Attributes</a>
+                  </li>
+                </ul>
+                <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+                    <!-- Options List start -->
+                    
+                    <div class="slds-col slds-large-size_8-of-12 product-list" >
+                        <div class="option-list-item">
+                            <div class="product-list-item-group">
+                                <div class="product-details product-select">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="product-details product-name">
+                                    <span class="product-name">Option 1</span>
+                                </div>
+                                <div class="product-details product-fee">
+                                    <span>$100</span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="option-list-item">
+                            <div class="product-list-item-group">
+                                <div class="product-details product-select">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="product-details product-name">
+                                    <span class="product-name">Option 2</span>
+                                </div>
+                                <div class="product-details product-fee">
+                                    <span>$150</span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="option-list-item">
+                            <div class="product-list-item-group">
+                                <div class="product-details product-select">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="product-details product-name">
+                                    <span class="product-name">Option 3</span>
+                                </div>
+                                <div class="product-details product-fee">
+                                    <span>$200</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <!-- Options List end -->
+                </div>
+            </div>
+            <!-- Tabs end -->
+
             <div class="center-page-content" style="margin-top: 20px;">
                 <div class="slds-grid product-area">
                     
                 </div>
-
-
                 <div class="slds-grid footer-area">
                     <div class="slds-col slds-large-size_12-of-12 slds-p-around_medium">
                         <div class="opp-btn-group">
-                            <button class="slds-button slds-button_brand">Confirm</button>
                             <button class="slds-button slds-button_neutral">Cancel</button>
+                            <button class="slds-button slds-button_brand">Confirm</button>
                         </div>
                     </div>
                 </div>
