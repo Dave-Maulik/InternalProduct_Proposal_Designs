@@ -69,10 +69,15 @@
     border-right: 1px solid silver;
 }
 
-
+/* Css for Configure popup */
 /* Css for option list item start */
+
+.option-list {
+    margin-top: 10px;
+}
+
 .option-list-item{
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     border-top: 1px solid silver;
     border-left: 1px solid silver;
     border-right: 1px solid silver;
@@ -81,7 +86,54 @@
 .option-list-item:last-child{
     border-bottom: 1px solid silver;
 }
+
+.option-list-item-group{
+    margin-bottom: 19px
+}
+
+.option-list-item-group{
+    margin-bottom: 19px
+}
+
+.option-list-item-group:last-child{
+    text-align: center;
+}
+
+.option-details{
+    float:left; display:inline; width: 20%;
+    text-align: left;
+}
+
+.option-details-right{
+    float:right; display:inline; width: 20%;
+    text-align: right;
+}
+
+.option-select{
+    text-align: left;
+    width: 10%;
+}
+
+.option-list-heading{
+    /* padding: 10px; */
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.configureError{
+    margin-top: 20px;
+    color: red;
+}
+
+.configureCheckbox{
+    width: 18px;
+    height: 18px;
+}
 /* Css for option list item end */
+/* Css for configure popup end */
+
+
 
 
 .product-list-item:last-child{

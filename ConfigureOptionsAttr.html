@@ -527,51 +527,75 @@
             <div class="slds-tabs_default">
                 <ul class="slds-tabs_default__nav" role="tablist">
                   <li class="slds-tabs_default__item slds-is-active" title="Product Options" role="presentation">
-                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">    Options</a>
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="optionTab">Options</a>
                   </li>
                   <li class="slds-tabs_default__item" title="Product Attributes" role="presentation">
-                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Attributes</a>
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="attrTab">Attributes</a>
                   </li>
                 </ul>
+
+                <p id="configureError" class="configureError">Select at least 1 and up to 7 options.</p>
+
+                <!-- <div class="option-list-heading">
+                    <div class="option-details">
+                        <span>Option</span>
+                    </div>
+                    <div class="option-details">
+                        <span>Price</span>
+                    </div>
+                </div> -->
+
                 <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
                     <!-- Options List start -->
                     
-                    <div class="slds-col slds-large-size_8-of-12 product-list" >
+                    <div class="slds-col slds-large-size_8-of-12 option-list" >
+                        
                         <div class="option-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
+                            <div class="option-list-item-group option-list-heading">
+                                <div class="option-details">
+                                    <span>Option</span>
                                 </div>
-                                <div class="product-details product-name">
+                                <div class="option-details-right">
+                                    <span>Price</span>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="option-list-item">
+                            <div class="option-list-item-group">
+                                <div class="option-details option-select">
+                                    <input type="checkbox" name="" id="" class="configureCheckbox">
+                                </div>
+                                <div class="option-details product-name">
                                     <span class="product-name">Option 1</span>
                                 </div>
-                                <div class="product-details product-fee">
+                                <div class="option-details-right product-fee">
                                     <span>$100</span>
                                 </div>
                             </div>
                         </div>    
                         <div class="option-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
+                            <div class="option-list-item-group">
+                                <div class="option-details option-select">
+                                    <input type="checkbox" name="" id="" class="configureCheckbox">
                                 </div>
-                                <div class="product-details product-name">
+                                <div class="option-details product-name">
                                     <span class="product-name">Option 2</span>
                                 </div>
-                                <div class="product-details product-fee">
+                                <div class="option-details-right product-fee">
                                     <span>$150</span>
                                 </div>
                             </div>
                         </div>    
                         <div class="option-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
+                            <div class="option-list-item-group">
+                                <div class="option-details option-select">
+                                    <input type="checkbox" name="" id="" class="configureCheckbox">
                                 </div>
-                                <div class="product-details product-name">
+                                <div class="option-details product-name">
                                     <span class="product-name">Option 3</span>
                                 </div>
-                                <div class="product-details product-fee">
+                                <div class="option-details-right product-fee">
                                     <span>$200</span>
                                 </div>
                             </div>
@@ -584,9 +608,6 @@
             <!-- Tabs end -->
 
             <div class="center-page-content" style="margin-top: 20px;">
-                <div class="slds-grid product-area">
-                    
-                </div>
                 <div class="slds-grid footer-area">
                     <div class="slds-col slds-large-size_12-of-12 slds-p-around_medium">
                         <div class="opp-btn-group">
