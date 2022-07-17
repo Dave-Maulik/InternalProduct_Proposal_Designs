@@ -70,10 +70,15 @@
 }
 
 /* Css for Configure popup */
+.grid-container{
+    column-gap: 10px;
+    justify-content: space-between;
+}
 /* Css for option list item start */
 
 .option-list {
     margin-top: 10px;
+    /* margin-right: 20px; */
 }
 
 .option-list-item{
@@ -130,7 +135,31 @@
     width: 18px;
     height: 18px;
 }
-/* Css for option list item end */
+    /* Css for option list item end */
+
+    /* Css for Summary Box start */
+.summary-box{
+    /* width: 280px; */
+    width: 30%;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.fee-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.summary-btn{
+    width: 100%;
+    margin-top: 10px;
+}
+.summary-btn-container{
+    margin-top: 30px;
+}
+
+    /* Css for Summary Box end */
+
 /* Css for configure popup end */
 
 

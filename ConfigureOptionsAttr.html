@@ -546,63 +546,107 @@
                 </div> -->
 
                 <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
-                    <!-- Options List start -->
                     
-                    <div class="slds-col slds-large-size_8-of-12 option-list" >
-                        
-                        <div class="option-list-item">
-                            <div class="option-list-item-group option-list-heading">
-                                <div class="option-details">
-                                    <span>Option</span>
-                                </div>
-                                <div class="option-details-right">
-                                    <span>Price</span>
-                                </div>
-                            </div>
-                        </div> 
+                    <div class="slds-grid grid-container">
 
-                        <div class="option-list-item">
-                            <div class="option-list-item-group">
-                                <div class="option-details option-select">
-                                    <input type="checkbox" name="" id="" class="configureCheckbox">
+                        <!-- Options List start -->
+                        <div class="slds-col slds-size_8-of-12 option-list" >
+                            
+                            <div class="option-list-item">
+                                <div class="option-list-item-group option-list-heading">
+                                    <div class="option-details">
+                                        <span>Option</span>
+                                    </div>
+                                    <div class="option-details-right">
+                                        <span>Price</span>
+                                    </div>
                                 </div>
-                                <div class="option-details product-name">
-                                    <span class="product-name">Option 1</span>
+                            </div> 
+
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 1</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$100</span>
+                                    </div>
                                 </div>
-                                <div class="option-details-right product-fee">
-                                    <span>$100</span>
+                            </div>    
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 2</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$150</span>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 3</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$200</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- Options List end -->                        
+                        
+                        <!-- Summary box start -->
+                        <div class="slds-col slds-size_4-of-12 summary-box">
+                            <span>Summary</span>
+                            <hr class="partition"/>
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>License Fee</span>
+                                </div>
+                                <div class="fee-price">
+                                    <span>$1200</span>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="option-list-item">
-                            <div class="option-list-item-group">
-                                <div class="option-details option-select">
-                                    <input type="checkbox" name="" id="" class="configureCheckbox">
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>Setup Fee</span>
                                 </div>
-                                <div class="option-details product-name">
-                                    <span class="product-name">Option 2</span>
-                                </div>
-                                <div class="option-details-right product-fee">
-                                    <span>$150</span>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="option-list-item">
-                            <div class="option-list-item-group">
-                                <div class="option-details option-select">
-                                    <input type="checkbox" name="" id="" class="configureCheckbox">
-                                </div>
-                                <div class="option-details product-name">
-                                    <span class="product-name">Option 3</span>
-                                </div>
-                                <div class="option-details-right product-fee">
+                                <div class="fee-price">
                                     <span>$200</span>
                                 </div>
                             </div>
-                        </div>    
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>Net Price</span>
+                                </div>
+                                <div class="fee-price">
+                                    <span>$1400</span>
+                                </div>
+                            </div>
+                            <div class="summary-btn-container">
+                                <div>
+                                    <button id="btn-validate" class="slds-button slds-button_brand summary-btn">Validate</button>
+                                </div>
+                                <div>
+                                    <button id="btn-update" class="slds-button slds-button_neutral summary-btn">Update Price</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Summary box end -->
+
                     </div>
 
-                    <!-- Options List end -->
                 </div>
             </div>
             <!-- Tabs end -->
