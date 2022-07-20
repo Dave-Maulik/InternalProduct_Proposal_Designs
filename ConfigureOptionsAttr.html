@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Product Configuration</title>
 
     <link rel="stylesheet" type="text/css"
         href="/node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css" />
@@ -503,389 +503,160 @@
 
     <div class="slds-brand-band slds-brand-band_none">
         <div class="slds-m-around_medium slds-p-around_small slds-card">
-            <div class="slds-path">
-                <div class="slds-grid slds-path__track">
-                    <div class="slds-grid slds-path__scroller-container">
-                        <div class="slds-path__scroller">
-                            <div class="slds-path__scroller_inner">
-                                <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
-                                    <li class="slds-path__item slds-is-complete" role="presentation">
-                                        <a aria-selected="true" class="slds-path__link" href="#" id="path-1"
-                                            role="option" tabindex="0">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                                <span class="slds-assistive-text">Current Stage:</span>
-                                            </span>
-                                            <span class="slds-path__title">Create Opportuinity</span>
-                                        </a>
-                                    </li>
-                                    <li class="slds-path__item slds-is-complete" role="presentation">
-                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-2"
-                                            role="option" tabindex="-1">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                            <span class="slds-path__title">Create Quote/Proposal</span>
-                                        </a>
-                                    </li>
-                                    <li class="slds-path__item slds-is-current slds-is-active" role="presentation">
-                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-3"
-                                            role="option" tabindex="-1">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                            <span class="slds-path__title">Catalog Page</span>
-                                        </a>
-                                    </li>
-                                    <li class="slds-path__item slds-is-incomplete" role="presentation">
-                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-4"
-                                            role="option" tabindex="-1">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                            <span class="slds-path__title">Cart Page</span>
-                                        </a>
-                                    </li>
-                                    <li class="slds-path__item slds-is-incomplete" role="presentation">
-                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-5"
-                                            role="option" tabindex="-1">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                            <span class="slds-path__title">Generate &amp; Approval</span>
-                                        </a>
-                                    </li>
-                                    <li class="slds-path__item slds-is-incomplete" role="presentation">
-                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-5"
-                                            role="option" tabindex="-1">
-                                            <span class="slds-path__stage">
-                                                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#check">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                            <span class="slds-path__title">Record Page</span>
-                                        </a>
-                                    </li>
-                                </ul>
+
+            <!-- Card Header starts -->
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="account">
+                        <img class="slds-icon slds-icon_medium" aria-hidden="true" src="node_modules/@salesforce-ux/design-system/assets/icons/standard/bundle_config.svg">
+                      <span class="slds-assistive-text">Product Configuration</span>
+                    </span>
+                  </div>
+                  <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Product Configuration</span>
+                    </h2>
+                  </div>
+                </header>
+            </div>
+            <!-- Card Header ends -->
+            <hr class="partition"/>
+
+            <!-- Tabs start -->
+            <div class="slds-tabs_default">
+                <ul class="slds-tabs_default__nav" role="tablist">
+                  <li class="slds-tabs_default__item slds-is-active" title="Product Options" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="optionTab">Options</a>
+                  </li>
+                  <li class="slds-tabs_default__item" title="Product Attributes" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="attrTab">Attributes</a>
+                  </li>
+                </ul>
+
+                <p id="configureError" class="configureError">Select at least 1 and up to 7 options.</p>
+
+                <!-- <div class="option-list-heading">
+                    <div class="option-details">
+                        <span>Option</span>
+                    </div>
+                    <div class="option-details">
+                        <span>Price</span>
+                    </div>
+                </div> -->
+
+                <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+                    
+                    <div class="slds-grid grid-container">
+
+                        <!-- Options List start -->
+                        <div class="slds-col slds-size_8-of-12 option-list" >
+                            
+                            <div class="option-list-item">
+                                <div class="option-list-item-group option-list-heading">
+                                    <div class="option-details">
+                                        <span>Option</span>
+                                    </div>
+                                    <div class="option-details-right">
+                                        <span>Price</span>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 1</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$100</span>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 2</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$150</span>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="option-list-item">
+                                <div class="option-list-item-group">
+                                    <div class="option-details option-select">
+                                        <input type="checkbox" name="" id="" class="configureCheckbox">
+                                    </div>
+                                    <div class="option-details product-name">
+                                        <span class="product-name">Option 3</span>
+                                    </div>
+                                    <div class="option-details-right product-fee">
+                                        <span>$200</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- Options List end -->                        
+                        
+                        <!-- Summary box start -->
+                        <div class="slds-col slds-size_4-of-12 summary-box">
+                            <span>Summary</span>
+                            <hr class="partition"/>
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>License Fee</span>
+                                </div>
+                                <div class="fee-price">
+                                    <span>$1200</span>
+                                </div>
+                            </div>
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>Setup Fee</span>
+                                </div>
+                                <div class="fee-price">
+                                    <span>$200</span>
+                                </div>
+                            </div>
+                            <div class="fee-container">
+                                <div class="fee-name">
+                                    <span>Net Price</span>
+                                </div>
+                                <div class="fee-price">
+                                    <span>$1400</span>
+                                </div>
+                            </div>
+                            <div class="summary-btn-container">
+                                <div>
+                                    <button id="btn-validate" class="slds-button slds-button_brand summary-btn">Validate</button>
+                                </div>
+                                <div>
+                                    <button id="btn-update" class="slds-button slds-button_neutral summary-btn">Update Price</button>
+                                </div>
+                                
                             </div>
                         </div>
+                        <!-- Summary box end -->
+
                     </div>
+
                 </div>
             </div>
+            <!-- Tabs end -->
 
             <div class="center-page-content" style="margin-top: 20px;">
-                <div class="slds-grid path-header">
-                    <div class="slds-col slds-medium-size_12-of-12 slds-large-size_12-of-12">Configure Products</div>
-                </div>
-                <div class="slds-grid path-sub-header">
-                    <div class="slds-col slds-large-size_3-of-12">Proposal Id | Name</div>
-                    <div class="slds-col slds-large-size_3-of-12">Account</div>
-                    <div class="slds-col slds-large-size_3-of-12">Opp</div>
-                    <div class="slds-col slds-large-size_3-of-12">Contact</div>
-                </div>
-                <div class="slds-grid">
-                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_4-of-12 slds-large-size_3-of-12">
-                        <div class="slds-form-element">
-                            <div class="slds-form-element__control">
-                                <div class="slds-combobox_container slds-size_small">
-                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
-                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
-                                            role="none">
-                                            <button type="button" class="slds-input_faux slds-combobox__input"
-                                                aria-labelledby="combobox-label-id-52 combobox-id-1-selected-value"
-                                                id="combobox-id-1-selected-value" aria-controls="listbox-id-1"
-                                                aria-expanded="false" aria-haspopup="listbox">
-                                                <span class="slds-truncate" id="combobox-value-id-56">Browse
-                                                    Catalog</span>
-                                            </button>
-                                            <span
-                                                class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-                                                <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
-                                                    aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#down">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div id="listbox-id-1"
-                                            class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
-                                            role="listbox">
-                                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
-                                                <li role="presentation" class="slds-listbox__item">
-                                                    <div id="option1"
-                                                        class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
-                                                        role="option">
-                                                        <span
-                                                            class="slds-media__figure slds-listbox__option-icon"></span>
-                                                        <span class="slds-media__body">
-                                                            <span class="slds-truncate" title="Option A">Option A</span>
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_4-of-12 slds-large-size_6-of-12">
-                        <div class="slds-global-header__item slds-global-header__item_search">
-                            <div class="slds-form-element">
-                                <label class="slds-form-element__label slds-assistive-text" for="combobox-id-3">Search
-                                    Salesforce</label>
-                                <div class="slds-form-element__control">
-                                    <div class="slds-combobox-group">
-                                        <div class="slds-combobox_object-switcher slds-combobox-addon_start">
-                                            <div class="slds-form-element">
-                                                <label class="slds-form-element__label slds-assistive-text"
-                                                    for="objectswitcher-combobox-id-3" id="combobox-label-id-6">Filter
-                                                    Search
-                                                    by:</label>
-                                                <div class="slds-form-element__control">
-                                                    <div class="slds-combobox_container">
-                                                        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
-                                                            aria-controls="primary-search-combobox-id-2">
-                                                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
-                                                                role="none">
-                                                                <button type="button"
-                                                                    class="slds-input_faux slds-combobox__input slds-combobox__input-value"
-                                                                    aria-labelledby="combobox-label-id-6 objectswitcher-combobox-id-3-selected-value"
-                                                                    id="objectswitcher-combobox-id-3-selected-value"
-                                                                    aria-controls="objectswitcher-listbox-id-3"
-                                                                    aria-expanded="false" aria-haspopup="listbox">
-                                                                    <span class="slds-truncate"
-                                                                        id="combobox-value-id-6">All Categories</span>
-                                                                </button>
-                                                                <span
-                                                                    class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-                                                                    <svg class="slds-icon slds-icon slds-icon_xx-small slds-icon-text-default"
-                                                                        aria-hidden="true">
-                                                                        <use
-                                                                            xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#down">
-                                                                        </use>
-                                                                    </svg>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slds-combobox_container slds-combobox-addon_end">
-                                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
-                                                id="primary-search-combobox-id-2">
-                                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left slds-global-search__form-element"
-                                                    role="none">
-                                                    <span
-                                                        class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_left">
-                                                        <svg class="slds-icon slds-icon slds-icon_xx-small slds-icon-text-default"
-                                                            aria-hidden="true">
-                                                            <use
-                                                                xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#search">
-                                                            </use>
-                                                        </svg>
-                                                    </span>
-                                                    <input type="text" class="slds-input slds-combobox__input"
-                                                        id="combobox-id-3" aria-autocomplete="list"
-                                                        aria-controls="search-listbox-id-2" aria-expanded="false"
-                                                        aria-haspopup="listbox" autocomplete="off" role="combobox"
-                                                        placeholder="Search Products" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="partition" />
-
-
-                <div class="slds-grid">
-                    <div class="slds-col slds-large-size_2-of-12">
-                        <div class="slds-form-element">
-                            <label class="slds-form-element__label" for="combobox-id-7" id="combobox-label-id-54">Select
-                                Categories</label>
-                            <div class="slds-form-element__control">
-                                <div class="slds-combobox_container slds-size_xxsmall">
-                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
-                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
-                                            role="none">
-                                            <button type="button"
-                                                class="slds-input_faux slds-combobox__input slds-combobox__input-value"
-                                                aria-labelledby="combobox-label-id-54 combobox-id-7-selected-value"
-                                                id="combobox-id-7-selected-value" aria-controls="listbox-id-7"
-                                                aria-expanded="false" aria-haspopup="listbox">
-                                                <span class="slds-truncate" id="combobox-value-id-62">2 Options
-                                                    Selected</span>
-                                            </button>
-                                            <span
-                                                class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-                                                <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
-                                                    aria-hidden="true">
-                                                    <use
-                                                        xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#down">
-                                                    </use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slds-listbox_selection-group">
-                                    <ul class="slds-listbox slds-listbox_horizontal" role="listbox"
-                                        aria-label="Selected Options:" aria-orientation="horizontal">
-                                        <li class="slds-listbox-item" role="presentation">
-                                            <span class="slds-pill" role="option" tabindex="0" aria-selected="true">
-                                                <span class="slds-pill__label" title="Option A">Software</span>
-                                                <span class="slds-icon_container slds-pill__remove" title="Remove">
-                                                    <svg class="slds-icon slds-icon_x-small slds-icon-text-default"
-                                                        aria-hidden="true">
-                                                        <use
-                                                            xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#close">
-                                                        </use>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </li>
-                                        <li class="slds-listbox-item" role="presentation">
-                                            <span class="slds-pill" role="option" tabindex="0" aria-selected="true">
-                                                <span class="slds-pill__label" title="Hardware">Hardw</span>
-                                                <span class="slds-icon_container slds-pill__remove" title="Remove">
-                                                    <svg class="slds-icon slds-icon_x-small slds-icon-text-default"
-                                                        aria-hidden="true">
-                                                        <use
-                                                            xlink:href="/node_modules/@salesforce-ux/design-system/assets/icons/utility-sprite/svg/symbols.svg#close">
-                                                        </use>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slds-grid slds-grid_vertical-align-start product-area">
-                    <div class="slds-col slds-large-size_2-of-12 helper-boxes">
-                        <div class="inner-area demo-border">
-                            <span>Top 5 Purchases</span>
-                        </div>
-                    </div>
-                    <div class="slds-col slds-large-size_8-of-12 product-list">
-                        <div class="product-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div class="product-details product-name">
-                                    <span class="product-name">Product 1</span>
-                                </div>
-                                <div class="product-details product-fee">
-                                    <span>Subscription Fee : $100</span>
-                                </div>
-                                <div class="product-details product-quantity">
-                                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                                    <input type='text' name='quantity' value='0' class='qty' />
-                                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_neutral">Configure</button>
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_brand">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div class="product-details product-name">
-                                    <span class="product-name">Product 1</span>
-                                </div>
-                                <div class="product-details product-fee">
-                                    <span>Subscription Fee : $100</span>
-                                </div>
-                                <div class="product-details product-quantity">
-                                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                                    <input type='text' name='quantity' value='0' class='qty' />
-                                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_neutral">Configure</button>
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_brand">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-list-item">
-                            <div class="product-list-item-group">
-                                <div class="product-details product-select">
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div class="product-details product-name">
-                                    <span class="product-name">Product 1</span>
-                                </div>
-                                <div class="product-details product-fee">
-                                    <span>Subscription Fee : $100</span>
-                                </div>
-                                <div class="product-details product-quantity">
-                                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                                    <input type='text' name='quantity' value='0' class='qty' />
-                                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_neutral">Configure</button>
-                                </div>
-                                <div class="product-details product-actions">
-                                    <button class="slds-button slds-button_brand">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slds-col slds-large-size_2-of-12 helper-boxes">
-                        <div class="inner-area demo-border">
-                            <span>Suggestions</span>
-                        </div>
-                    </div>
-                </div>
-
-
                 <div class="slds-grid footer-area">
                     <div class="slds-col slds-large-size_12-of-12 slds-p-around_medium">
-                        <div class="opp-btn-group">
-                            <button class="slds-button slds-button_neutral">Previous</button>
-                            <button class="slds-button slds-button_brand">Next</button>
+                        <div class="configure-btn-group">
+                            <button class="slds-button slds-button_neutral">Cancel</button>
+                            <button class="slds-button slds-button_brand">Confirm</button>
                         </div>
                     </div>
                 </div>

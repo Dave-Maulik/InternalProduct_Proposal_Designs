@@ -54,11 +54,9 @@
     margin: 10px 0px 10px 0px;
 }
 
-.product-area .slds-col:first-child {
-    margin-right: 10px;
-}
 
-.product-list {
+
+.product-area{
     margin-top: 20px;
 }
 
@@ -69,15 +67,118 @@
     border-right: 1px solid silver;
 }
 
-.product-list-item:last-child {
+/* Css for Configure popup */
+.grid-container{
+    column-gap: 10px;
+    justify-content: space-between;
+}
+/* Css for option list item start */
+
+.option-list {
+    margin-top: 10px;
+    /* margin-right: 20px; */
+}
+
+.option-list-item{
+    padding: 10px 20px 10px 10px;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+.option-list-item:last-child{
+    border-bottom: 1px solid silver;
+}
+
+.option-list-item-group{
+    margin-bottom: 19px
+}
+
+.option-list-item-group{
+    margin-bottom: 19px
+}
+
+.option-list-item-group:last-child{
+    text-align: center;
+}
+
+.option-details{
+    float:left; display:inline; width: 20%;
+    text-align: left;
+}
+
+.option-details-right{
+    float:right; display:inline; width: 20%;
+    text-align: right;
+}
+
+.option-select{
+    text-align: left;
+    width: 10%;
+}
+
+.option-list-heading{
+    /* padding: 10px; */
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.configureError{
+    margin-top: 20px;
+    color: red;
+}
+
+.configureCheckbox{
+    width: 18px;
+    height: 18px;
+}
+    /* Css for option list item end */
+
+    /* Css for Summary Box start */
+.summary-box{
+    /* width: 280px; */
+    width: 30%;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.fee-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.summary-btn{
+    width: 100%;
+    margin-top: 10px;
+}
+.summary-btn-container{
+    margin-top: 30px;
+}
+
+    /* Css for Summary Box end */
+.configure-btn-group{
+    text-align: right;
+}
+
+/* Css for configure popup end */
+
+
+
+
+.product-list-item:last-child{
     border-bottom: 1px solid silver;
 }
 
 .product-details {
     float: left;
     display: inline;
-    width: 20%;
+    width: 17%;
     text-align: left;
+}
+
+.product-quantity{
+    text-align: right;
 }
 
 .product-list-item-group {
@@ -101,14 +202,13 @@
     width: 70px;
 }
 
+
+
 input.slds-input1 {
     width: 15px;
     height: 15px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 498ee4fe84b20e9fdbe3255805b2665fb93a6532
 .info-section {
     padding: 15px;
 }
@@ -171,12 +271,9 @@ input.qtyplus {
 input.qtyminus {
     width: 25px;
     height: 25px;
-<<<<<<< HEAD
 }
 
-
-  
-  
-=======
+.demo-border{
+    border: 1px solid black;
+    padding: 10px;
 }
->>>>>>> 498ee4fe84b20e9fdbe3255805b2665fb93a6532
